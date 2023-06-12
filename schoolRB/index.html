@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary School Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #45ff54;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #323232;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: lightslategray;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #323232;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .box-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #323232; margin-top: 0;">Rishton Primary School</h1>
+    <div class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+        </div>
+        <div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">View <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="ViewStudent.php">Pupils</a>
+                    <a href="ViewParent.php">Parent</a>
+                    <a href="ViewTeacher.php">Teacher</a>
+                    <a href="ViewClass.php">Class</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Add <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="AddStudent.php">Pupils</a>
+                    <a href="AddParent.php">Parent</a>
+                    <a href="AddTeacher.php">Teacher</a>
+                    <a href="AddClass.php">Class</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Delete <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="delStudent.php">Pupils</a>
+                    <a href="delParent.php">Parent</a>
+                    <a href="delTeacher.php">Teacher</a>
+                    <a href="delClass.php">Class</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Update <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="Updatestudent.php">Pupils</a>
+                    <a href="UpdateParent.php">Parent</a>
+                    <a href="UpdateTeacher.php">Teacher</a>
+                    <a href="UpdateClass.php">Class</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-shadow">
+        <h1 style="text-decoration-line: underline; color: #323232;">Greetings from Rishton Primary School</h1>
+    </div>
+</body>
+</html>
